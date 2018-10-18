@@ -81,20 +81,18 @@
                 <artifactId>commons-fileupload</artifactId>
                 <version>${commons-fileupload.version}</version>
             </dependency>
+
             <dependency>
-                <groupId>org.fuwushe</groupId>
-                <artifactId>f-sapjco3</artifactId>
+                <groupId>com.hyaroma</groupId>
+                <artifactId>w-sapjco3</artifactId>
                 <version>1.0</version>
+                <scope>system</scope>
+                <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/w-sapjco3-1.0.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${log4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

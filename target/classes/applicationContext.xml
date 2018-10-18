@@ -18,10 +18,12 @@
 			</list>
 		</property>
 	</bean>
+	<!--客户机1 -->
 	<bean id="aqSapUtil1" class="com.hyaroma.sap.SapUtil" init-method="init" >
 		<property name="sapPoolName" value="${sap.server_pool_name_aq1}" />
 	</bean>
 
+	<!--客户机2 -->
 	<bean id="aqSapUtil2" class="com.hyaroma.sap.SapUtil" init-method="init" >
 		<property name="sapPoolName" value="${sap.server_pool_name_aq2}" />
 	</bean>
