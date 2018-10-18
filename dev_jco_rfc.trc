@@ -1,0 +1,71 @@
+
+**** Error file opened at 20181017 115119 China Standard Time Rel 3.0.2 Hotfix (2009-09-01) [711.59]
+Error:  >Wed Oct 17 11:51:19,160<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=sap_pool_aq1 ASHOST=10.10.10.11 SYSNR=00 SAPROUTER=/H/182.140.132.10/H/ PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '182.140.132.10:3299' broken
+TIME        Wed Oct 17 11:51:19 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4866
+DETAIL      NiIRead: P=182.140.132.10:3299; L=192.168.15.34:57950
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Wed Oct 17 11:51:43,444<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=sap_pool_aq2 ASHOST=10.10.10.11 SYSNR=00 SAPROUTER=/H/182.140.132.11/H/ PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       connection to partner '182.140.132.11:3299' broken
+TIME        Wed Oct 17 11:51:43 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4866
+DETAIL      NiIRead: P=182.140.132.11:3299; L=192.168.15.34:57953
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Wed Oct 17 11:52:04,446<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=sap_pool_aq2 ASHOST=10.10.10.11 SYSNR=00 SAPROUTER=/H/182.140.132.11/H/ PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '182.140.132.11:3299' not reached
+TIME        Wed Oct 17 11:52:04 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3151
+DETAIL      NiPConnect2: 182.140.132.11:3299
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     8
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
